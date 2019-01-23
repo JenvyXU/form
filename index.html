@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>form表单</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        <div class="username">
+            <label for="username">姓名：</label>
+            <input type="text" name="username" id="username" placeholder="用户名">            
+        </div>
+        <div class="password">
+            <label for="password">密码：</label>
+            <input type="password" id="password" name="password">            
+        </div>
+        <div class="gender">
+            <label>性别：</label>
+            <input type="radio" name="gender" value="男" selected>男
+            <input type="radio" name="gender" value="女">女           
+        </div>
+        <div class="partner">
+            <label>取向：</label>
+            <input type="radio" name="gender1" value="男">男
+            <input type="radio" name="gender1" value="女" select>女           
+        </div>
+        <div class="habit">
+            <label for="">爱好：</label>
+            <input type="checkbox" name="habit" value="dota">dota
+            <input type="checkbox" name="habit" value="旅游" on>旅游
+            <input type="checkbox" name="habit" value="宠物" >宠物
+        </div>
+        <div class="textarea">
+            <label for="comment">评论：</label>
+            <textarea name="comment" id="comment" cols="30" rows="10">ddd
+            </textarea>
+        </div>
+        <div class="car">
+            <label for="mycar">我的car：</label>
+            <select name="mycar" id="mycar">
+                <option value="萨博" selected>萨博</option>
+                <option value="大众">大众</option>
+                <option value="比亚迪">比亚迪</option>
+            </select>
+            <input type="submit" value="提交">
+        </div>
+    </form>
+</body>
+</html>
